@@ -22,30 +22,30 @@ Partial Class Form1
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnConf = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
-        'Button1
+        'btnConf
         '
-        Me.Button1.Location = New System.Drawing.Point(1127, 12)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(85, 21)
-        Me.Button1.TabIndex = 2
-        Me.Button1.Text = "Configuração"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnConf.Location = New System.Drawing.Point(1127, 12)
+        Me.btnConf.Name = "btnConf"
+        Me.btnConf.Size = New System.Drawing.Size(85, 21)
+        Me.btnConf.TabIndex = 2
+        Me.btnConf.Text = "Configuração"
+        Me.btnConf.UseVisualStyleBackColor = True
         '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1224, 691)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnConf)
         Me.Name = "Form1"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
-        Me.Text = "but"
+        Me.Text = "Form1"
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents Button1 As System.Windows.Forms.Button
+    Friend WithEvents btnConf As System.Windows.Forms.Button
 
 End Class
