@@ -63,6 +63,7 @@ Partial Class Conf
         Me.Controls.Add(Me.btn1000x650)
         Me.Controls.Add(Me.btn800x600)
         Me.Name = "Conf"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Conf"
         Me.ResumeLayout(False)
 
