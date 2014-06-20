@@ -6,7 +6,13 @@ MalaDireta_v2-0
 </name>
 </assembly>
 <members>
-<member name="P:MalaDireta_v2_0.My.Resources.Resources.ResourceManager">
+<member name="M:MalaDireta_v2_0.Util.TextBoxMoeda(System.Windows.Forms.TextBox@)">
+	<summary>
+ Método que formata para moeda o conteúdo de um TextBox
+ </summary>
+	<param name="txt">Controle a ser formatado</param>
+	<remarks></remarks>
+</member><member name="P:MalaDireta_v2_0.My.Resources.Resources.ResourceManager">
 	<summary>
   Returns the cached ResourceManager instance used by this class.
 </summary>

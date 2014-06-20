@@ -14,3 +14,4 @@ C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDi
 C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\Imperia.Encryption.dll
 C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\Interop.VBIDE.dll
 C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.vbproj.ResolveComReference.cache
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.Main.resources
