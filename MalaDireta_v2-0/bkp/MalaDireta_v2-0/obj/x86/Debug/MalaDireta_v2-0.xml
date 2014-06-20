@@ -1,0 +1,142 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+MalaDireta_v2-0
+</name>
+</assembly>
+<members>
+<member name="M:MalaDireta_v2_0.Util.TextBoxMoeda(System.Windows.Forms.TextBox@)">
+	<summary>
+ Método que formata para moeda o conteúdo de um TextBox
+ </summary>
+	<param name="txt">Controle a ser formatado</param>
+	<remarks></remarks>
+</member><member name="P:MalaDireta_v2_0.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:MalaDireta_v2_0.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:MalaDireta_v2_0.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.#ctor">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinalizaCompleted">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza1Completed">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza2Completed">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza3Completed">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza4Completed">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza5Completed">
+	<remarks/>
+</member><member name="E:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza6Completed">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinalizaAsync(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinalizaAsync(System.Int32,System.String,System.String,System.String,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza1Async(System.Int32,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza1Async(System.Int32,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.String,System.DateTime,System.DateTime,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza2Async(System.Int32,System.String,System.String,System.DateTime,System.DateTime,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza2Async(System.Int32,System.String,System.String,System.DateTime,System.DateTime,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza3Async(System.Int32,System.Int32,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza3Async(System.Int32,System.Int32,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza4Async(System.Int32,System.String,System.String,System.String,System.String)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza4Async(System.Int32,System.String,System.String,System.String,System.String,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza5Async(System.Int32,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza5Async(System.Int32,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza(System.Int32,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza6Async(System.Int32,System.String,System.String,System.String,System.Int32)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.ConsultaSinaliza6Async(System.Int32,System.String,System.String,System.String,System.Int32,System.Object)">
+	<remarks/>
+</member><member name="M:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos.CancelAsync(System.Object)">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultasVeiculos">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.AuthHeader.Usuario">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.AuthHeader.Senha">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.AuthHeader.AnyAttr">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.AuthHeader">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinalizaCompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinalizaCompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinalizaCompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza1CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza1CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza1CompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza2CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza2CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza2CompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza3CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza3CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza3CompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza4CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza4CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza4CompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza5CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza5CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza5CompletedEventArgs">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza6CompletedEventHandler">
+	<remarks/>
+</member><member name="P:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza6CompletedEventArgs.Result">
+	<remarks/>
+</member><member name="T:MalaDireta_v2_0.WSSINALIZA.ConsultaSinaliza6CompletedEventArgs">
+	<remarks/>
+</member>
+</members>
+</doc>

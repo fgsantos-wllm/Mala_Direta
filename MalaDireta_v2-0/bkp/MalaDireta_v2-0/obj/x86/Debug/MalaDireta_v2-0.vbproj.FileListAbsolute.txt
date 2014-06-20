@@ -1,0 +1,17 @@
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\MalaDireta_v2-0.exe
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\MalaDireta_v2-0.pdb
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\MalaDireta_v2-0.xml
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.Form1.resources
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.Resources.resources
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.vbproj.GenerateResource.Cache
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.exe
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.xml
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.pdb
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\MalaDireta_v2-0.exe.config
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.vbprojResolveAssemblyReference.cache
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.Conf.resources
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.ZeCarlos.resources
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\bin\Debug\Imperia.Encryption.dll
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\Interop.VBIDE.dll
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2-0.vbproj.ResolveComReference.cache
+C:\projetos\GIT\Mala_Direta\MalaDireta_v2-0\MalaDireta_v2-0\obj\x86\Debug\MalaDireta_v2_0.Main.resources
