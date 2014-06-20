@@ -57,7 +57,7 @@ Partial Class Main
         Me.txtNomeReferencia = New System.Windows.Forms.TextBox()
         Me.lblNomeReferencia = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.lblAquivoSelecionadoConteudo = New System.Windows.Forms.Label()
+        Me.lblArquivoSelecionadoConteudo = New System.Windows.Forms.Label()
         Me.lblArquivo = New System.Windows.Forms.Label()
         Me.btnSelecionarXML = New System.Windows.Forms.Button()
         Me.btnProcessarArquivo = New System.Windows.Forms.Button()
@@ -452,7 +452,7 @@ Partial Class Main
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.lblAquivoSelecionadoConteudo)
+        Me.GroupBox1.Controls.Add(Me.lblArquivoSelecionadoConteudo)
         Me.GroupBox1.Controls.Add(Me.lblArquivo)
         Me.GroupBox1.Location = New System.Drawing.Point(15, 128)
         Me.GroupBox1.Name = "GroupBox1"
@@ -460,14 +460,14 @@ Partial Class Main
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         '
-        'lblAquivoSelecionadoConteudo
+        'lblArquivoSelecionadoConteudo
         '
-        Me.lblAquivoSelecionadoConteudo.AutoSize = True
-        Me.lblAquivoSelecionadoConteudo.Location = New System.Drawing.Point(149, 20)
-        Me.lblAquivoSelecionadoConteudo.Name = "lblAquivoSelecionadoConteudo"
-        Me.lblAquivoSelecionadoConteudo.Size = New System.Drawing.Size(16, 13)
-        Me.lblAquivoSelecionadoConteudo.TabIndex = 5
-        Me.lblAquivoSelecionadoConteudo.Text = "..."
+        Me.lblArquivoSelecionadoConteudo.AutoSize = True
+        Me.lblArquivoSelecionadoConteudo.Location = New System.Drawing.Point(149, 20)
+        Me.lblArquivoSelecionadoConteudo.Name = "lblArquivoSelecionadoConteudo"
+        Me.lblArquivoSelecionadoConteudo.Size = New System.Drawing.Size(16, 13)
+        Me.lblArquivoSelecionadoConteudo.TabIndex = 5
+        Me.lblArquivoSelecionadoConteudo.Text = "..."
         '
         'lblArquivo
         '
@@ -598,7 +598,7 @@ Partial Class Main
     Friend WithEvents txtNomeReferencia As System.Windows.Forms.TextBox
     Friend WithEvents lblNomeReferencia As System.Windows.Forms.Label
     Friend WithEvents GroupBox1 As System.Windows.Forms.GroupBox
-    Friend WithEvents lblAquivoSelecionadoConteudo As System.Windows.Forms.Label
+    Friend WithEvents lblArquivoSelecionadoConteudo As System.Windows.Forms.Label
     Friend WithEvents lblArquivo As System.Windows.Forms.Label
     Friend WithEvents btnSelecionarXML As System.Windows.Forms.Button
     Friend WithEvents btnProcessarArquivo As System.Windows.Forms.Button

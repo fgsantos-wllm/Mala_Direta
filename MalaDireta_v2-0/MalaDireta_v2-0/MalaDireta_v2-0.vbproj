@@ -92,10 +92,10 @@
     <Compile Include="Classe\Filtro.vb" />
     <Compile Include="Classe\MalaDireta.vb" />
     <Compile Include="Classe\Util.vb" />
-    <Compile Include="Form\Conf.Designer.vb">
-      <DependentUpon>Conf.vb</DependentUpon>
+    <Compile Include="Form\Config.Designer.vb">
+      <DependentUpon>Config.vb</DependentUpon>
     </Compile>
-    <Compile Include="Form\Conf.vb">
+    <Compile Include="Form\Config.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\Form1.vb">
@@ -139,8 +139,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Form\Conf.resx">
-      <DependentUpon>Conf.vb</DependentUpon>
+    <EmbeddedResource Include="Form\Config.resx">
+      <DependentUpon>Config.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>

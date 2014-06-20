@@ -6,7 +6,6 @@
     Private conf As Conf
 
     '-------------------------------------------------------------------------------------------------------------------
-<<<<<<< HEAD
     'MÉTODOS
     '-------------------------------------------------------------------------------------------------------------------
     Private Sub guardar()
@@ -28,8 +27,6 @@
     End Sub
 
     '-------------------------------------------------------------------------------------------------------------------
-=======
->>>>>>> 82e916d463fb222e6c5ce2da0c406f6f7df31a4f
     'EVENTOS
     '-------------------------------------------------------------------------------------------------------------------
     Private Sub btnConf_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnConf.Click
@@ -45,14 +42,11 @@
         If Application.OpenForms.OfType(Of Conf)().Count() > 0 Then
             Me.conf.Focus()
         End If
-<<<<<<< HEAD
     End Sub
 
     Private Sub btnBrowseDestino_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowseSaida.Click
         If ofdEntrada.ShowDialog = DialogResult.OK Then
             txtCaminhoSaida.Text = ofdEntrada.FileName
         End If
-=======
->>>>>>> 82e916d463fb222e6c5ce2da0c406f6f7df31a4f
     End Sub
 End Class
