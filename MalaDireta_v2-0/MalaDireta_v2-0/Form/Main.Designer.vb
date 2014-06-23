@@ -25,6 +25,7 @@ Partial Class Main
         Me.grpProcessamento = New System.Windows.Forms.GroupBox()
         Me.TabControlFiltro = New System.Windows.Forms.TabControl()
         Me.Filtro = New System.Windows.Forms.TabPage()
+        Me.txtValorLicenciamento = New System.Windows.Forms.TextBox()
         Me.btnFecharTabFiltro = New System.Windows.Forms.Button()
         Me.btnLimpar = New System.Windows.Forms.Button()
         Me.lblValorLicenciamento = New System.Windows.Forms.Label()
@@ -52,21 +53,21 @@ Partial Class Main
         Me.grpLocalExtracao = New System.Windows.Forms.GroupBox()
         Me.cboLoja = New System.Windows.Forms.ComboBox()
         Me.lblLoja = New System.Windows.Forms.Label()
+        Me.btnBrowseSaida = New System.Windows.Forms.Button()
         Me.cboServico = New System.Windows.Forms.ComboBox()
         Me.lblServico = New System.Windows.Forms.Label()
         Me.txtNomeReferencia = New System.Windows.Forms.TextBox()
         Me.lblNomeReferencia = New System.Windows.Forms.Label()
+        Me.lblLocalExtracao = New System.Windows.Forms.Label()
+        Me.txtPathSalvamento = New System.Windows.Forms.TextBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblArquivoSelecionadoConteudo = New System.Windows.Forms.Label()
         Me.lblArquivo = New System.Windows.Forms.Label()
         Me.btnSelecionarXML = New System.Windows.Forms.Button()
         Me.btnProcessarArquivo = New System.Windows.Forms.Button()
-        Me.btnBrowseSaida = New System.Windows.Forms.Button()
-        Me.txtPathSalvamento = New System.Windows.Forms.TextBox()
-        Me.lblLocalExtracao = New System.Windows.Forms.Label()
         Me.ofdEntrada = New System.Windows.Forms.OpenFileDialog()
         Me.sfdSaida = New System.Windows.Forms.SaveFileDialog()
-        Me.txtValorLicenciamento = New System.Windows.Forms.TextBox()
+        Me.fbdSaida = New System.Windows.Forms.FolderBrowserDialog()
         Me.grpProcessamento.SuspendLayout()
         Me.TabControlFiltro.SuspendLayout()
         Me.Filtro.SuspendLayout()
@@ -84,7 +85,7 @@ Partial Class Main
         Me.grpProcessamento.Location = New System.Drawing.Point(0, 257)
         Me.grpProcessamento.Name = "grpProcessamento"
         Me.grpProcessamento.Size = New System.Drawing.Size(1112, 444)
-        Me.grpProcessamento.TabIndex = 3
+        Me.grpProcessamento.TabIndex = 1
         Me.grpProcessamento.TabStop = False
         Me.grpProcessamento.Text = "Resultado do Processamento:"
         '
@@ -118,12 +119,19 @@ Partial Class Main
         Me.Filtro.Text = "Filtro"
         Me.Filtro.UseVisualStyleBackColor = True
         '
+        'txtValorLicenciamento
+        '
+        Me.txtValorLicenciamento.Location = New System.Drawing.Point(259, 125)
+        Me.txtValorLicenciamento.Name = "txtValorLicenciamento"
+        Me.txtValorLicenciamento.Size = New System.Drawing.Size(48, 20)
+        Me.txtValorLicenciamento.TabIndex = 3
+        '
         'btnFecharTabFiltro
         '
         Me.btnFecharTabFiltro.Location = New System.Drawing.Point(182, 170)
         Me.btnFecharTabFiltro.Name = "btnFecharTabFiltro"
         Me.btnFecharTabFiltro.Size = New System.Drawing.Size(117, 23)
-        Me.btnFecharTabFiltro.TabIndex = 3
+        Me.btnFecharTabFiltro.TabIndex = 5
         Me.btnFecharTabFiltro.Text = "[Fechar/SALVAR]"
         Me.btnFecharTabFiltro.UseVisualStyleBackColor = True
         '
@@ -154,7 +162,7 @@ Partial Class Main
         Me.cboVeiculoRestricao.Location = New System.Drawing.Point(259, 90)
         Me.cboVeiculoRestricao.Name = "cboVeiculoRestricao"
         Me.cboVeiculoRestricao.Size = New System.Drawing.Size(48, 21)
-        Me.cboVeiculoRestricao.TabIndex = 1
+        Me.cboVeiculoRestricao.TabIndex = 2
         '
         'lblVeiculoRestricao
         '
@@ -241,7 +249,7 @@ Partial Class Main
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(1112, 257)
-        Me.GroupBox2.TabIndex = 2
+        Me.GroupBox2.TabIndex = 0
         Me.GroupBox2.TabStop = False
         '
         'chkDatanasc
@@ -250,7 +258,7 @@ Partial Class Main
         Me.chkDatanasc.Location = New System.Drawing.Point(657, 208)
         Me.chkDatanasc.Name = "chkDatanasc"
         Me.chkDatanasc.Size = New System.Drawing.Size(111, 17)
-        Me.chkDatanasc.TabIndex = 18
+        Me.chkDatanasc.TabIndex = 7
         Me.chkDatanasc.Text = "Apenas Datanasc"
         Me.chkDatanasc.UseVisualStyleBackColor = True
         Me.chkDatanasc.Visible = False
@@ -261,7 +269,7 @@ Partial Class Main
         Me.chkFormatarApenas.Location = New System.Drawing.Point(657, 184)
         Me.chkFormatarApenas.Name = "chkFormatarApenas"
         Me.chkFormatarApenas.Size = New System.Drawing.Size(106, 17)
-        Me.chkFormatarApenas.TabIndex = 17
+        Me.chkFormatarApenas.TabIndex = 6
         Me.chkFormatarApenas.Text = "Apenas Formatar"
         Me.chkFormatarApenas.UseVisualStyleBackColor = True
         '
@@ -270,7 +278,7 @@ Partial Class Main
         Me.btnAbort.Location = New System.Drawing.Point(989, 217)
         Me.btnAbort.Name = "btnAbort"
         Me.btnAbort.Size = New System.Drawing.Size(111, 30)
-        Me.btnAbort.TabIndex = 6
+        Me.btnAbort.TabIndex = 9
         Me.btnAbort.Text = "Abortar e Salvar"
         Me.btnAbort.UseVisualStyleBackColor = True
         Me.btnAbort.Visible = False
@@ -301,7 +309,7 @@ Partial Class Main
         Me.chkGerarArquivoPadraoFiltrado.Location = New System.Drawing.Point(426, 207)
         Me.chkGerarArquivoPadraoFiltrado.Name = "chkGerarArquivoPadraoFiltrado"
         Me.chkGerarArquivoPadraoFiltrado.Size = New System.Drawing.Size(228, 17)
-        Me.chkGerarArquivoPadraoFiltrado.TabIndex = 3
+        Me.chkGerarArquivoPadraoFiltrado.TabIndex = 4
         Me.chkGerarArquivoPadraoFiltrado.Text = "Gerar Aquivo XML Retorno Padrão Filtrado"
         Me.chkGerarArquivoPadraoFiltrado.UseVisualStyleBackColor = True
         '
@@ -311,7 +319,7 @@ Partial Class Main
         Me.chkGerarArquivoMailing.Location = New System.Drawing.Point(426, 230)
         Me.chkGerarArquivoMailing.Name = "chkGerarArquivoMailing"
         Me.chkGerarArquivoMailing.Size = New System.Drawing.Size(189, 17)
-        Me.chkGerarArquivoMailing.TabIndex = 4
+        Me.chkGerarArquivoMailing.TabIndex = 5
         Me.chkGerarArquivoMailing.Text = "Gerar Arquivo XML Mailing Filtrado"
         Me.chkGerarArquivoMailing.UseVisualStyleBackColor = True
         '
@@ -321,7 +329,7 @@ Partial Class Main
         Me.chkGerarArquivoPadrao.Location = New System.Drawing.Point(426, 184)
         Me.chkGerarArquivoPadrao.Name = "chkGerarArquivoPadrao"
         Me.chkGerarArquivoPadrao.Size = New System.Drawing.Size(191, 17)
-        Me.chkGerarArquivoPadrao.TabIndex = 2
+        Me.chkGerarArquivoPadrao.TabIndex = 3
         Me.chkGerarArquivoPadrao.Text = "Gerar Aquivo XML Retorno Padrão"
         Me.chkGerarArquivoPadrao.UseVisualStyleBackColor = True
         '
@@ -331,7 +339,7 @@ Partial Class Main
         Me.btnFiltro.Location = New System.Drawing.Point(147, 184)
         Me.btnFiltro.Name = "btnFiltro"
         Me.btnFiltro.Size = New System.Drawing.Size(92, 54)
-        Me.btnFiltro.TabIndex = 1
+        Me.btnFiltro.TabIndex = 2
         Me.btnFiltro.Text = "Ativar Filtro"
         Me.btnFiltro.UseVisualStyleBackColor = False
         Me.btnFiltro.Visible = False
@@ -395,10 +403,11 @@ Partial Class Main
         '
         Me.cboLoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cboLoja.FormattingEnabled = True
+        Me.cboLoja.Items.AddRange(New Object() {"SELECIONE"})
         Me.cboLoja.Location = New System.Drawing.Point(187, 80)
         Me.cboLoja.Name = "cboLoja"
         Me.cboLoja.Size = New System.Drawing.Size(675, 21)
-        Me.cboLoja.TabIndex = 3
+        Me.cboLoja.TabIndex = 4
         '
         'lblLoja
         '
@@ -410,6 +419,15 @@ Partial Class Main
         Me.lblLoja.TabIndex = 13
         Me.lblLoja.Text = "Loja?"
         '
+        'btnBrowseSaida
+        '
+        Me.btnBrowseSaida.Location = New System.Drawing.Point(787, 13)
+        Me.btnBrowseSaida.Name = "btnBrowseSaida"
+        Me.btnBrowseSaida.Size = New System.Drawing.Size(75, 26)
+        Me.btnBrowseSaida.TabIndex = 1
+        Me.btnBrowseSaida.Text = "Procurar..."
+        Me.btnBrowseSaida.UseVisualStyleBackColor = True
+        '
         'cboServico
         '
         Me.cboServico.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
@@ -419,7 +437,7 @@ Partial Class Main
         Me.cboServico.Location = New System.Drawing.Point(698, 49)
         Me.cboServico.Name = "cboServico"
         Me.cboServico.Size = New System.Drawing.Size(164, 21)
-        Me.cboServico.TabIndex = 2
+        Me.cboServico.TabIndex = 3
         '
         'lblServico
         '
@@ -438,7 +456,7 @@ Partial Class Main
         Me.txtNomeReferencia.Location = New System.Drawing.Point(188, 46)
         Me.txtNomeReferencia.Name = "txtNomeReferencia"
         Me.txtNomeReferencia.Size = New System.Drawing.Size(370, 26)
-        Me.txtNomeReferencia.TabIndex = 1
+        Me.txtNomeReferencia.TabIndex = 2
         '
         'lblNomeReferencia
         '
@@ -449,6 +467,26 @@ Partial Class Main
         Me.lblNomeReferencia.Size = New System.Drawing.Size(167, 13)
         Me.lblNomeReferencia.TabIndex = 8
         Me.lblNomeReferencia.Text = "Nome/Referencia de Saída:"
+        '
+        'lblLocalExtracao
+        '
+        Me.lblLocalExtracao.AutoSize = True
+        Me.lblLocalExtracao.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.lblLocalExtracao.Location = New System.Drawing.Point(29, 19)
+        Me.lblLocalExtracao.Name = "lblLocalExtracao"
+        Me.lblLocalExtracao.Size = New System.Drawing.Size(152, 13)
+        Me.lblLocalExtracao.TabIndex = 7
+        Me.lblLocalExtracao.Text = "Salvar resultado no local:"
+        '
+        'txtPathSalvamento
+        '
+        Me.txtPathSalvamento.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.txtPathSalvamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPathSalvamento.Location = New System.Drawing.Point(188, 12)
+        Me.txtPathSalvamento.Name = "txtPathSalvamento"
+        Me.txtPathSalvamento.Size = New System.Drawing.Size(593, 26)
+        Me.txtPathSalvamento.TabIndex = 0
+        Me.txtPathSalvamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'GroupBox1
         '
@@ -484,7 +522,7 @@ Partial Class Main
         Me.btnSelecionarXML.Location = New System.Drawing.Point(15, 184)
         Me.btnSelecionarXML.Name = "btnSelecionarXML"
         Me.btnSelecionarXML.Size = New System.Drawing.Size(126, 54)
-        Me.btnSelecionarXML.TabIndex = 0
+        Me.btnSelecionarXML.TabIndex = 1
         Me.btnSelecionarXML.Text = "1) Selecione o arquivo Excel (XLS)"
         Me.btnSelecionarXML.UseVisualStyleBackColor = True
         '
@@ -493,50 +531,14 @@ Partial Class Main
         Me.btnProcessarArquivo.Location = New System.Drawing.Point(245, 184)
         Me.btnProcessarArquivo.Name = "btnProcessarArquivo"
         Me.btnProcessarArquivo.Size = New System.Drawing.Size(124, 54)
-        Me.btnProcessarArquivo.TabIndex = 5
+        Me.btnProcessarArquivo.TabIndex = 8
         Me.btnProcessarArquivo.Text = "2) Processar Arquivo"
         Me.btnProcessarArquivo.UseVisualStyleBackColor = True
-        '
-        'btnBrowseSaida
-        '
-        Me.btnBrowseSaida.Location = New System.Drawing.Point(787, 13)
-        Me.btnBrowseSaida.Name = "btnBrowseSaida"
-        Me.btnBrowseSaida.Size = New System.Drawing.Size(75, 26)
-        Me.btnBrowseSaida.TabIndex = 6
-        Me.btnBrowseSaida.Text = "Procurar..."
-        Me.btnBrowseSaida.UseVisualStyleBackColor = True
-        '
-        'txtPathSalvamento
-        '
-        Me.txtPathSalvamento.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.txtPathSalvamento.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txtPathSalvamento.Location = New System.Drawing.Point(188, 12)
-        Me.txtPathSalvamento.Name = "txtPathSalvamento"
-        Me.txtPathSalvamento.Size = New System.Drawing.Size(593, 26)
-        Me.txtPathSalvamento.TabIndex = 0
-        Me.txtPathSalvamento.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        '
-        'lblLocalExtracao
-        '
-        Me.lblLocalExtracao.AutoSize = True
-        Me.lblLocalExtracao.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lblLocalExtracao.Location = New System.Drawing.Point(29, 19)
-        Me.lblLocalExtracao.Name = "lblLocalExtracao"
-        Me.lblLocalExtracao.Size = New System.Drawing.Size(152, 13)
-        Me.lblLocalExtracao.TabIndex = 7
-        Me.lblLocalExtracao.Text = "Salvar resultado no local:"
         '
         'ofdEntrada
         '
         Me.ofdEntrada.FileName = "OpenFileDialog1"
         Me.ofdEntrada.Title = "Planilha do Excel |*.xlsx |"
-        '
-        'txtValorLicenciamento
-        '
-        Me.txtValorLicenciamento.Location = New System.Drawing.Point(259, 125)
-        Me.txtValorLicenciamento.Name = "txtValorLicenciamento"
-        Me.txtValorLicenciamento.Size = New System.Drawing.Size(48, 20)
-        Me.txtValorLicenciamento.TabIndex = 12
         '
         'Main
         '
@@ -608,4 +610,5 @@ Partial Class Main
     Friend WithEvents ofdEntrada As System.Windows.Forms.OpenFileDialog
     Friend WithEvents sfdSaida As System.Windows.Forms.SaveFileDialog
     Friend WithEvents txtValorLicenciamento As System.Windows.Forms.TextBox
+    Friend WithEvents fbdSaida As System.Windows.Forms.FolderBrowserDialog
 End Class

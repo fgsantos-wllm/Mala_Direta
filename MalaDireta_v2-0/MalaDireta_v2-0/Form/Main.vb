@@ -17,30 +17,30 @@
     End Sub
 
     Private Sub checarPreenchimentoIndividual(ByVal txt As TextBox, ByRef pend() As String, ByVal msg As String)
-        If txt.Text = "" Or Not System.IO.Directory.Exists(txt.Text) Then
-            ReDim Preserve pend(pend.Length + 1)
+        If txt.Text = "" Then 'Or Not System.IO.Directory.Exists(txt.Text) Then
             pend(pend.Length - 1) = msg
+            ReDim Preserve pend(pend.Length)
         End If
     End Sub
 
     Private Sub checarPreenchimentoIndividual(ByVal lbl As Label, ByRef pend() As String, ByVal msg As String)
-        If lbl.Text = "..." Or Not System.IO.Directory.Exists(lbl.Text) Then
-            ReDim Preserve pend(pend.Length + 1)
+        If lbl.Text = "..." Or Not System.IO.File.Exists(lbl.Text) Then
             pend(pend.Length - 1) = msg
+            ReDim Preserve pend(pend.Length)
         End If
     End Sub
 
     Private Sub checarPreenchimentoIndividual(ByVal cbo As ComboBox, ByRef pend() As String, ByVal msg As String)
         If cbo.SelectedIndex = -1 Then
-            ReDim Preserve pend(pend.Length + 1)
             pend(pend.Length - 1) = msg
+            ReDim Preserve pend(pend.Length)
         End If
     End Sub
 
     Private Function checarPreenchimento() As String()
         Dim pend(0) As String
 
-        checarPreenchimentoIndividual(txtPathSalvamento, pend, "-Selecione um diretório válido de destino para o resultado do processamento")
+        checarPreenchimentoIndividual(txtPathSalvamento, pend, "-Selecione um diretório válido de destino para o resultado do" & vbCrLf & vbTab & "processamento")
         checarPreenchimentoIndividual(txtNomeReferencia, pend, "-Selecione um nome referência para o resultado do processamento")
         checarPreenchimentoIndividual(cboServico, pend, "-Selecione um serviço")
         checarPreenchimentoIndividual(cboLoja, pend, "-Selecione uma loja")
@@ -56,12 +56,14 @@
         'inicializa os filtros
         Me.filtros = New Filtro()
         limparFiltros()
+        cboServico.SelectedIndex = 0
+        cboLoja.SelectedIndex = 0
     End Sub
 
     Private Sub btnBrowseSaida_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnBrowseSaida.Click
         'selecionar o arquivo e guardar seu diretório no txtPathSalvamento
-        If sfdSaida.ShowDialog = DialogResult.OK Then
-            txtPathSalvamento.Text = sfdSaida.FileName
+        If fbdSaida.ShowDialog() = DialogResult.OK Then
+            txtPathSalvamento.Text = fbdSaida.SelectedPath
         End If
     End Sub
 
@@ -109,23 +111,31 @@
         'checar se há erro de preenchimento
         Dim pend() As String = checarPreenchimento()
 
-        If pend.Length > 0 Then
+        If pend.Length > 1 Then
             'se houver erro, exibir mensagem de erro e não processar
             Dim msg As String
-            If pend.Length > 1 Then
+            If pend.Length > 2 Then
                 'caso haja mais de um erro concatenar todas as mensagens de erro
-                msg = "Foram detectados os seguintes erros de preenchimento do formulário. Favor corrija-os e tente novamente:" & vbCrLf
+                msg = "Foram detectados os seguintes erros de preenchimento do formulário. Favor corrija-os e tente novamente:" & vbCrLf & vbCrLf
                 For Each erro As String In pend
                     msg &= vbTab & erro & vbCrLf
                 Next
             Else
                 'caso haja apenas um erro
-                msg = "Foi detectado o seguinte erro de preenchimento do formulário. Favor corrija-o e tente novamente:" & vbCrLf & vbTab & pend(0)
+                msg = "Foi detectado o seguinte erro de preenchimento do formulário. Favor corrija-o e tente novamente:" & vbCrLf & vbCrLf & vbTab & pend(0)
             End If
             MsgBox(msg)
         Else
             'se não houver erro, processar arquivo
             MsgBox("PROCESSANDO")
+        End If
+    End Sub
+
+    Private Sub cboServico_SelectedIndexChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles cboServico.SelectedIndexChanged
+        If cboServico.SelectedIndex = 3 Then 'serviço(3) = "CONSULTA OFFLINE"
+            chkDatanasc.Visible = True
+        Else
+            chkDatanasc.Visible = False
         End If
     End Sub
 End Class
